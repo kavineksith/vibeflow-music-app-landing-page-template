@@ -113,7 +113,7 @@ export const Hero: React.FC = () => {
 
           <div className="absolute bottom-40 -right-4 md:right-0 p-4 glass rounded-2xl animate-float animation-delay-4000 flex items-center gap-3 max-w-[200px]">
              <div className="w-10 h-10 rounded-full overflow-hidden">
-               <img src="https://picsum.photos/100/100?random=1" alt="User" className="w-full h-full object-cover" />
+               <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&h=100&auto=format&fit=crop" alt="User" className="w-full h-full object-cover" />
              </div>
              <div>
                <p className="text-xs text-gray-400">Friend Activity</p>
