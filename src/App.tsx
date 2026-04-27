@@ -26,11 +26,11 @@ function App() {
               </h2>
               <div className="flex flex-col sm:flex-row justify-center gap-6">
                 <button className="bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform flex items-center justify-center gap-3">
-                   <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_logo_white.svg" className="w-5 h-5 invert" alt="Apple" />
+                   <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_logo_white.svg" crossOrigin="anonymous" className="w-5 h-5 invert" alt="Apple" />
                    App Store
                 </button>
                 <button className="bg-transparent border border-white/30 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 hover:border-white transition-all flex items-center justify-center gap-3">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" className="w-6 h-6" alt="Android" />
+                   <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" crossOrigin="anonymous" className="w-6 h-6" alt="Android" />
                   Google Play
                 </button>
               </div>

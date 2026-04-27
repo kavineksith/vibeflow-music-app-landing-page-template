@@ -7,7 +7,7 @@ const MockupScreen: React.FC<{ title: string; imageUrl: string; rotate?: string 
     style={{ transform: `rotate(${rotate})` }}
   >
     <div className="relative w-64 h-[500px] bg-black rounded-[2.5rem] border-4 border-gray-800 shadow-2xl overflow-hidden mx-auto">
-      <img src={imageUrl} alt={title} className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+      <img src={imageUrl} crossOrigin="anonymous" alt={title} className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
       <div className="absolute bottom-6 left-0 w-full text-center">
         <p className="text-white font-bold text-lg">{title}</p>
@@ -40,7 +40,7 @@ export const Showcase: React.FC = () => {
           />
           <MockupScreen 
             title="Lyrics" 
-            imageUrl="https://images.unsplash.com/photo-1514525253440-b393452e8d26?q=80&w=1000&auto=format&fit=crop" 
+            imageUrl="https://images.unsplash.com/photo-1519619091416-f5d7e5200702?q=80&w=1000&auto=format&fit=crop" 
             rotate="6deg"
           />
         </div>

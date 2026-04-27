@@ -4,7 +4,7 @@ import { Play } from 'lucide-react';
 
 const PlaylistCard: React.FC<{ title: string; subtitle: string; image: string; color: string }> = ({ title, subtitle, image, color }) => (
   <div className="group relative w-64 h-80 flex-shrink-0 cursor-pointer rounded-3xl overflow-hidden">
-    <img src={image} alt={title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+    <img src={image} crossOrigin="anonymous" alt={title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
     
     <div className="absolute bottom-0 left-0 w-full p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
@@ -30,13 +30,13 @@ export const Playlists: React.FC = () => {
           <PlaylistCard 
             title="Neon Drive" 
             subtitle="Retrowave" 
-            image="https://images.unsplash.com/photo-1555664424-778a69022365?q=80&w=1000&auto=format&fit=crop" 
+            image="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=1000&auto=format&fit=crop" 
             color="#00ffff" 
           />
           <PlaylistCard 
             title="Sad Boi Hours" 
             subtitle="Lo-Fi / Chill" 
-            image="https://images.unsplash.com/photo-1516280440614-6697288d5d38?q=80&w=1000&auto=format&fit=crop" 
+            image="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=1000&auto=format&fit=crop" 
             color="#a855f7" 
           />
           <PlaylistCard 
@@ -54,7 +54,7 @@ export const Playlists: React.FC = () => {
           <PlaylistCard 
             title="Underground" 
             subtitle="Techno" 
-            image="https://images.unsplash.com/photo-1574169208507-84376194878f?q=80&w=1000&auto=format&fit=crop" 
+            image="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1000&auto=format&fit=crop" 
             color="#ef4444" 
           />
         </div>
